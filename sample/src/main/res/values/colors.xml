@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--Logcat色值-->
+    <color name="colorVerbose">#BBBBBB</color>
+    <color name="colorDebug">#0070BB</color>
+    <color name="colorInfo">#48BB31</color>
+    <color name="colorWarn">#BBBB23</color>
+    <color name="colorError">#FF0006</color>
+    <color name="colorAssert">#8F0005</color>
+
+</resources>
