@@ -73,6 +73,6 @@ appName: Log支持库
 applicationId: com.amlzq.asb.log
 ```
 
-## 其他优秀的log类库
+## 其他优秀的Android log库
 * [orhanobut/logger](https://github.com/orhanobut/logger)
 * [JakeWharton/timber](https://github.com/JakeWharton/timber)
