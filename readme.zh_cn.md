@@ -1,5 +1,11 @@
-# android-support-log
-- 
+## 特性
+- 全局TAG
+- 全局日志开关
+- 消息判断空类型
+- Log类代理日志输入接口。
+- LogWrapper类包装Android原生Log。
+- 部分代码来源于谷歌样例工程[android-RuntimePermissions](https://github.com/googlesamples/android-RuntimePermissions)
+- 本项目的目标是一个简洁，易用，可被替代，可扩展的安卓日志库。
 
 ```
 在实际项目中，需要记录Log时通常并不会直接使用android.util.Log类的static方法，而是再封装一个自己的Log类，在这个Log类中调用android.util.Log类的static方法，在需要记录Log时调用封装的Log类。这样做有如下几个好处。
@@ -72,11 +78,9 @@ appName: Log支持库
 applicationId: com.amlzq.asb.log
 ```
 
-### 参考
+## 参考
 - https://developer.android.com/reference/android/util/Log
 - https://developer.android.com/studio/debug/am-logcat?hl=zh-cn
-- based on android.util.Log enhanced
-- based on https://github.com/googlesamples/android-RuntimePermissions transform
 
 ## 其他优秀的Android log库
 * [orhanobut/logger](https://github.com/orhanobut/logger)
