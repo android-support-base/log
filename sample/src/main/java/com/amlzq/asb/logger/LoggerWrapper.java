@@ -1,4 +1,4 @@
-package com.amlzq.asb.log;
+package com.amlzq.asb.logger;
 
 import android.util.Log;
 

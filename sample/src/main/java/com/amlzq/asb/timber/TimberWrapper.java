@@ -1,4 +1,4 @@
-package com.amlzq.asb.log;
+package com.amlzq.asb.timber;
 
 import android.util.Log;
 

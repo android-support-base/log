@@ -31,8 +31,6 @@ public class MainActivity extends FragmentActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        APPConfig.init(this);
-
         // This method sets up our custom logger, which will print all log messages to the device
         // screen, as well as to adb logcat.
         initializeLogging();
@@ -49,17 +47,17 @@ public class MainActivity extends FragmentActivity {
     public void initializeLogging() {
         // Using Log, front-end to the logging chain, emulates android.util.log method signatures.
         // Wraps Android's native log framework
-        Log.TAG = APPConfig.IDENTIFY;
+        Log.TAG = MyConfig.IDENTIFY;
         Log.LEVEL = Log.VERBOSE;
 
         // Wraps Android's native log framework.
         com.amlzq.android.log.LogWrapper wrapper = new com.amlzq.android.log.LogWrapper();
 
         // Wraps Logger framework.
-//        com.amlzq.asb.log.LoggerWrapper wrapper = new com.amlzq.asb.log.LoggerWrapper();
+//        com.amlzq.asb.logger.LoggerWrapper wrapper = new com.amlzq.asb.logger.LoggerWrapper();
 
         // Wraps Timber framework.
-//        com.amlzq.asb.log.TimberWrapper wrapper = new com.amlzq.asb.log.TimberWrapper();
+//        com.amlzq.asb.timber.TimberWrapper wrapper = new com.amlzq.asb.timber.TimberWrapper();
 
         // Using Log, front-end to the logging chain, emulates android.util.log method signatures.
         Log.setLogNode(wrapper);
@@ -88,7 +86,7 @@ public class MainActivity extends FragmentActivity {
         } else {
             Timber.plant(new FileLoggingTree());
         }
-        Timber.tag(APPConfig.IDENTIFY);
+        Timber.tag(MyConfig.IDENTIFY);
 
         Timber.v("Ready go");
     }
@@ -112,7 +110,7 @@ public class MainActivity extends FragmentActivity {
 
     @SuppressLint("TimberArgCount")
     public void onTimberEvent(View view) {
-        Timber.tag(APPConfig.IDENTIFY);
+        Timber.tag(MyConfig.IDENTIFY);
         Timber.v("A button with ID %s was clicked to say '%s'.", view.getId(), view.getAlpha());
         Timber.d("A button with ID %s was clicked to say '%s'.", view.getId(), view.getAlpha());
         Timber.i("A button with ID %s was clicked to say '%s'.", view.getId(), view.getAlpha());
@@ -130,6 +128,11 @@ public class MainActivity extends FragmentActivity {
         Log.wtf(this);
 
         Log.e(this, new NullPointerException("按钮是空指针"));
+        try {
+            int a = 2 / 0;
+        } catch (Exception e) {
+            Log.e(e);
+        }
 
         new Thread(new Runnable() {
             @Override

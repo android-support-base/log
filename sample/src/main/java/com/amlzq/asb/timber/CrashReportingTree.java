@@ -5,7 +5,7 @@ import android.util.Log;
 import timber.log.Timber;
 
 /**
- * Created by yxkj on 2018/8/21.
+ * Created by amlzq on 2018/8/21.
  * 崩溃报告树
  */
 

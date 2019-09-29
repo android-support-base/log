@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Log支持库</string>
+    <string name="app_name">SupportLog</string>
     <string name="intro_message" translatable="false">
         <![CDATA[
 

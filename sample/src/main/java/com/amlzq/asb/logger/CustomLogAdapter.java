@@ -7,7 +7,7 @@ import android.support.annotation.Nullable;
 import com.orhanobut.logger.LogAdapter;
 
 /**
- * Created by yxkj on 2018/8/28.
+ * Created by amlzq on 2018/8/28.
  * 自定义日志
  */
 

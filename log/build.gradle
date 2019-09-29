@@ -59,6 +59,6 @@ publish {
     artifactId = 'log'
     publishVersion = android.defaultConfig.versionName
     desc = 'android support log api'
-    website = 'https://github.com/amlzq/android-support-base/tree/android-support-log'
-    repository = 'https://github.com/amlzq/android-support-base.git'
+    website = 'https://github.com/android-support-base/log'
+    repository = 'https://github.com/android-support-base/log.git'
 }

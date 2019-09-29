@@ -23,37 +23,43 @@ package com.amlzq.android.log;
  * in LogNode.</p>
  * <p>format "date time PID-TID/package priority/tag: message"</p>
  */
-@SuppressWarnings("unused")
 public final class Log {
     // Grabbing the native values from Android's native logging facilities,
     // to make for easy migration and interop.
     public static final int NONE = -1;
     /**
-     * Priority constant for the println method; use Log.v. 详细(最低优先级, 最详细)
+     * Priority constant for the println method; use Log.v.
+     * 详细(最低优先级, 最详细)
      */
     public static final int VERBOSE = android.util.Log.VERBOSE;
     /**
-     * Priority constant for the println method; use Log.d. 调试
+     * Priority constant for the println method; use Log.d.
+     * 调试
      */
     public static final int DEBUG = android.util.Log.DEBUG;
     /**
-     * Priority constant for the println method; use Log.i. 信息
+     * Priority constant for the println method; use Log.i.
+     * 信息
      */
     public static final int INFO = android.util.Log.INFO;
     /**
-     * Priority constant for the println method; use Log.w. 警告
+     * Priority constant for the println method; use Log.w.
+     * 警告
      */
     public static final int WARN = android.util.Log.WARN;
     /**
-     * Priority constant for the println method; use Log.e. 错误
+     * Priority constant for the println method; use Log.e.
+     * 错误
      */
     public static final int ERROR = android.util.Log.ERROR;
     /**
-     * Priority constant for the println method. 断言(最高优先级, 最简略)
+     * Priority constant for the println method.
+     * 断言(最高优先级, 最简略)
      */
     public static final int ASSERT = android.util.Log.ASSERT;
     /**
-     * not use for the println method. 关闭日志
+     * not use for the println method.
+     * 关闭日志
      */
     public static final int CLOSE = 8;
 
